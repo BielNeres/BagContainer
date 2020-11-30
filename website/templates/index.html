@@ -1,0 +1,227 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+
+	<meta charset="utf-8">
+    <title>Bag Container</title>
+    <meta name="description" content="">	
+	<meta name="author" content="">
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+	<link rel="icon" href="{% static 'images/favicon/favicon-32x32.png' %}" type= "{% static 'images/x-icon' %}" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'images/favicon/favicon-144x144.png' %}">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'images/favicon/favicon-72x72.png' %}">
+	<link rel="apple-touch-icon-precomposed" href="{% static 'images/favicon/favicon-54x54.png' %}">
+	
+
+	
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<link rel="stylesheet" href="{% static 'css/prettyPhoto.css' %}">
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+	<link rel="stylesheet" href="{% static 'css/owl.theme.css' %}">
+	<link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+	<link rel="stylesheet" href="{% static 'css/cd-hero.css' %}">
+    <link id="style-switch" href="{% static 'css/presets/preset3.css' %}" media="screen" rel="stylesheet" type="text/css">
+    
+
+
+</head>
+
+<body>
+
+
+{% block content%}
+
+	
+
+{% endblock %}
+</body>
+
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 footer-widget">
+                <h3 class="widget-title">Locais Mais Procurados</h3>
+                <div class="latest-post-items media">
+                        <div class="latest-post-content media-body">
+                            <h4><a href="#">Paulista</a></h4>
+                            <p class="post-meta">
+                                <span class="post-meta-cat"><a href="#"> Centro de São Paulo</a></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="latest-post-items media">
+                        <div class="latest-post-content media-body">
+                            <h4><a href="#">Praia Grande</a></h4>
+                            <p class="post-meta">
+                                <span class="date"><i class="icon icon-calendar"></i>Litoral</span>
+                                <span class="post-meta-comments"><i class="icon icon-bubbles4"></i> <a href="#">SP</a></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="latest-post-items media">
+                        <div class="latest-post-content media-body">
+                            <h4><a href="#">Mooca</a></h4>
+                            <p class="post-meta">
+                                <span class="date"><i class="icon icon-calendar"></i> São Paulo</span>
+                                <span class="post-meta-comments"><i class="icon icon-bubbles4"></i> <a href="#">SP</a></span>
+                            </p>
+                        </div>
+                    </div>
+
+            </div>
+            
+
+            <div class="col-md-4 col-sm-12 footer-widget">
+                <h3 class="widget-title">Estabelecimentos</h3>
+
+                <div class="img-gallery">
+                    <div class="img-container">
+                        <a class="thumb-holder" data-rel="prettyPhoto" href="{% static 'images/guarda.jpg' %}">
+                            <img src="{% static 'images/guarda.jpg' %}" alt="">
+                        </a>
+                        <a class="thumb-holder" data-rel="prettyPhoto" href="{% static 'images/bike1.png' %}">
+                            <img src="{% static 'images/bike1.png' %}" alt="">
+                        </a>
+                        <a class="thumb-holder" data-rel="prettyPhoto" href="{% static 'images/bike.png' %}">
+                            <img src="{% static 'images/bike.png' %}" alt="">
+                        </a>
+                        <a class="thumb-holder" data-rel="prettyPhoto" href="{% static 'images/guarda_volumes.jpeg' %}">
+                            <img src="{% static 'images/guarda_volumes.jpeg' %}" alt="">
+                        </a>
+                        <a class="thumb-holder" data-rel="prettyPhoto" href="{% static 'images/guarda1.jpg' %}">
+                            <img src="{% static 'images/guarda1.jpg' %}" alt="">
+                        </a>
+                        <a class="thumb-holder" data-rel="prettyPhoto" href="{% static 'images/gallery/6.jpg' %}">
+                            <img src="{% static 'images/gallery/6.jpg' %}" alt="">
+                        </a>
+                        <a class="thumb-holder" data-rel="prettyPhoto" href="{% static 'images/gallery/7.jpg' %}">
+                            <img src="{% static 'images/gallery/7.jpg' %}" alt="">
+                        </a>
+                        <a class="thumb-holder" data-rel="prettyPhoto" href="{% static 'images/bicicletario.jpeg' %}">
+                            <img src="{% static 'images/bicicletario.jpeg' %}" alt="">
+                        </a>
+                        <a class="thumb-holder" data-rel="prettyPhoto" href="{% static 'images/slider/bg1.jpg' %}">
+                            <img src="{% static 'images/slider/bg1.jpg' %}" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-12 footer-widget footer-about-us">
+                <h3 class="widget-title">Contato</h3>
+                <p>Somos uma jovem startup trabalhando para criar uma ferramenta que ajude a todos em seu dia a dia </p>
+                <h4>Localidade</h4>
+                <p>Mastertech</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Email:</h4>
+                        <p>bag@container.com</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Telefone</h4>
+                        <p>4002-8922</p>
+                    </div>
+                </div>
+               
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+
+<section id="copyright" class="copyright angle">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="footer-social unstyled">
+                    <li>
+                        <a title="Twitter" href="#">
+                            <span class="icon-pentagon wow bounceIn"><i class="fa fa-twitter"></i></span>
+                        </a>
+                        <a title="Facebook" href="#">
+                            <span class="icon-pentagon wow bounceIn"><i class="fa fa-facebook"></i></span>
+                        </a>
+                        <a title="Google+" href="#">
+                            <span class="icon-pentagon wow bounceIn"><i class="fa fa-google-plus"></i></span>
+                        </a>
+                        <a title="linkedin" href="#">
+                            <span class="icon-pentagon wow bounceIn"><i class="fa fa-linkedin"></i></span>
+                        </a>
+                        <a title="Pinterest" href="#">
+                            <span class="icon-pentagon wow bounceIn"><i class="fa fa-pinterest"></i></span>
+                        </a>
+                        <a title="Skype" href="#">
+                            <span class="icon-pentagon wow bounceIn"><i class="fa fa-skype"></i></span>
+                        </a>
+                        <a title="Dribble" href="#">
+                            <span class="icon-pentagon wow bounceIn"><i class="fa fa-dribbble"></i></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="copyright-info">
+                  &copy; Copyright 2019 - Bag Container. </a></span>
+                </div>
+            </div>
+        </div>
+       <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
+            <button class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-double-up"></i></button>
+        </div>
+    </div>
+</section>
+
+
+
+
+<script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'js/style-switcher.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'js/owl.carousel.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'js/jquery.flexslider.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'js/cd-hero.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'js/isotope.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/ini.isotope.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'js/wow.min.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'js/smoothscroll.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'js/jquery.counterup.min.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'js/waypoints.min.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'js/efeitoescrita.js' %}"></script>
+</div>
+     
+
+</html>
+

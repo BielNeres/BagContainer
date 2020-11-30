@@ -1,0 +1,225 @@
+{% extends 'index.html' %}
+{% load static %}
+	
+{% block content %}
+
+<div class="body-inner">
+	
+	<header id="header" class="navbar-fixed-top header" role="banner">
+		<div class="container">
+			<div class="row">
+				
+				<div class="navbar-header">
+				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				    </button>
+				    <div class="navbar-brand navbar-bg">
+					    <a href="../">
+					    	<img class="img-responsive" src="{% static 'images/logo.png' %}" alt="logo">
+					    </a> 
+				    </div>                   
+				</div>
+				<nav class="collapse navbar-collapse clearfix" role="navigation">
+						<ul class="nav navbar-nav navbar-right">
+							
+							<li><a href="/">Home</a></li>
+							
+							<li class="dropdown active"><a href="/sobre">Sobre</a></li>
+                     
+                    		<li><a href="/contato">Contato</a></li>
+
+                    		<li><a href="../preco">Preços</a></li>
+
+							{% if user.is_authenticated %}
+							<li><a href="../logout">Logout</a></li>
+							{% else %}
+							<li><a href="../login">Login</a></li>
+							{% endif %}
+		
+		
+						</ul>
+					</nav>
+					
+			</div>
+		</div>
+	</header>
+	
+	<div id="banner-area">
+		<img src="{% static 'images/banner/banner2.jpg' %}" alt ="" />
+		<div class="parallax-overlay"></div>
+			
+			<div class="banner-title-content">
+	        	<div class="text-center">
+		        	<h2>Sobre</h2>
+		        	<ul class="breadcrumb">
+			            <li>Home</li>
+			            <li><a href="#"> Contato</a></li>
+		          	</ul>
+	          	</div>
+          	</div>
+	</div>
+	<section id="main-container">
+		<div class="container">
+
+
+			<div class="row">
+				<div class="col-md-12 heading text-center">
+					<h2 class="title2">Sobre os Serviços
+						<span><h4>O Bag Container veio para inovar em segurança e facilidade a todos ciclistas e para quem precisa guardar objetos na coreria do dia a dia. </h4> </span>
+					</h2>
+				</div>
+			</div>
+
+			<div class="row about-wrapper-top">
+				<div class="col-md-6 ts-padding about-message">
+					<h3>Serviços</h3>
+					
+					<p>Localizado em pontos estrategicos pela cidades guarda volumes e bicicletários 24hrs espalhados pela cidade por um valor mensal, trimestral e anual, 
+						equipado com destravamento pelo app, ou cartão. Guarda volumes com tomada dentro para carregamento de 
+						equipamentos eletrônicos  e bicicletários de fácil acesso pela cidade..</p>
+				</div><!--/ About message end -->
+				<div class="col-md-6 ts-padding about-img" style="height:374px;background:url(../static/images/guarda_volumes.jpeg) 50% 50% / cover no-repeat;">
+				</div><!--/ About image end -->
+			</div><!--/ Content row end -->
+
+			<div class="row about-wrapper-bottom">
+				<div class="col-md-6 ts-padding about-img" style="height:374px;background:url(../static/images/bicicletario.jpeg) 50% 50% / cover no-repeat;">
+				</div><!--/ About image end -->
+				<div class="col-md-6 ts-padding about-message">
+					<h3>Segurança</h3>
+					<p>Guarda volumes ficara em locais estratégicos da cidade onde sempre tem movimento ou segurança 
+						por perto, além de contar com sensores que informarão o serviço de segurança publica e a própria 
+						Bag Container em caso de tentativa de arrombamento para ser tomado medidas cabíveis o mais rápido 
+						possível.</p>
+				</div><!--/ About message end -->
+			</div><!--/ Content row end -->
+
+			
+
+		</div>
+
+		<div class="container">
+
+			
+			<div class="team">
+
+				<div class="row">
+					<div class="col-md-12 heading text-center">
+						<h2 class="title2">O time
+							<span class="title-desc">O time de Qualidade</span>
+						</h2>
+					</div>
+				</div>
+
+				<div class="row text-center">
+					<div class="col-md-3 col-sm-6">
+						<div class="team wow slideInLeft">
+							<div class="img-hexagon">
+								<img src="{% static 'images/lin.jpeg' %}" alt="">
+								<span class="img-top"></span>
+								<span class="img-bottom"></span>
+							</div>
+							<div class="team-content">
+								<h3>Jhonny Lin</h3>
+								<p>Back-End</p>
+								<div class="team-social">
+									<a class="fb" href="https://www.facebook.com/jhonny.lin.965"target="_blank"><i class="fa fa-facebook"></i></a>
+									<a class="linkdin" href="https://www.linkedin.com/in/jhonny-lin/ "target="_blank"><i class="fa fa-linkedin"></i></a>
+									<a class="dribble" href="https://github.com/JhonnyLin "target="_blank"><i class="fa fa-github"></i></a>
+									<a class="gplus" href="https://www.instagram.com/jhonnyslin/ "target="_blank"><i class="fa fa-instagram"></i></a>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="team wow slideInLeft">
+							<div class="img-hexagon">
+								<img src="{% static 'images/thiago.jpeg' %}" alt="">
+								<span class="img-top"></span>
+								<span class="img-bottom"></span>
+							</div>
+							<div class="team-content">
+								<h3>Thiago Mouzinho</h3>
+								<p>Web Designer</p>
+								<div class="team-social">
+									<a class="fb" href="https://www.facebook.com/mouzinho08 "target="_blank"><i class="fa fa-facebook"></i></a>
+									<a class="linkdin" href="https://www.linkedin.com/in/thiago-correia-mouzinho-117403114/ "target="_blank"><i class="fa fa-linkedin"></i></a>
+									<a class="dribble" href="https://github.com/Mouzinho08 "target="_blank"><i class="fa fa-github"></i></a>
+									<a class="gplus" href="https://www.instagram.com/th_mouzinho/"target="_blank"><i class="fa fa-instagram"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="team wow slideInRight">
+							<div class="img-hexagon">
+								<img src="{% static 'images/enter.jpeg' %}" alt="">
+								<span class="img-top"></span>
+								<span class="img-bottom"></span>
+							</div>
+							<div class="team-content">
+								<h3>Cristopher Araujo</h3>
+								<p>Web Designer</p>
+								<div class="team-social">
+									<a class="fb" href="https://www.facebook.com/cristopher.araujo07 "target="_blank"><i class="fa fa-facebook"></i></a>
+									<a class="linkdin" href=""><i class="fa fa-linkedin"></i></a>
+									<a class="dribble" href="https://github.com/Crisfher7 "target="_blank"><i class="fa fa-github"></i></a>
+									<a class="gplus" href="https://www.instagram.com/chris.araujo_/"target="_blank"><i class="fa fa-instagram"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="team animate wow slideInRight">
+							<div class="img-hexagon">
+								<img src="{% static 'images/neres.jpeg' %}" alt="">
+								<span class="img-top"></span>
+								<span class="img-bottom"></span>
+							</div>
+							<div class="team-content">
+								<h3>Gabriel Neres</h3>
+								<p>Back-End</p>
+								<div class="team-social">
+									<a class="fb" href="https://www.facebook.com/gabriel.neres.357 "target="_blank"><i class="fa fa-facebook"></i></a>
+									<a class="linkdin" href="https://www.linkedin.com/in/gabriel-neres-gon%C3%A7alves-135101139/ "target="_blank"><i class="fa fa-linkedin"></i></a>
+									<a class="dribble" href="https://github.com/BielNeres "target="_blank"><i class="fa fa-github"></i></a>
+									<a class="gplus" href="https://www.instagram.com/gabriel_neress/"target="_blank"><i class="fa fa-instagram"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				<div class="col-md-3 col-sm-6">
+						<div class="team animate wow slideInRight">
+							<div class="img-hexagon">
+								<img src="{% static 'images/senai.jpeg' %}" alt="">
+								<span class="img-top"></span>
+								<span class="img-bottom"></span>
+							</div>
+							<div class="team-content">
+								<h3>Tiago Diniz</h3>
+								<p>Web Designer</p>
+								<div class="team-social">
+									<a class="fb" href="#"><i class="fa fa-facebook"></i></a>
+									<a class="linkdin" href="#"><i class="fa fa-linkedin"></i></a>
+									<a class="dribble" href="https://github.com/tiagodnzz "target="_blank"><i class="fa fa-github"></i></a>
+									<a class="gplus" href="#"><i class="fa fa-instagram"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+	
+
+
+	<div class="gap-40"></div>
+
+{% endblock %}  

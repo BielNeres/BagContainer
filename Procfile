@@ -1,0 +1,1 @@
+web: gunicorn config_bag_containr.wsgi

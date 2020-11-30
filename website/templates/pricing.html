@@ -1,0 +1,119 @@
+{% extends 'index.html' %}
+{% load static %}
+	
+{% block content %}
+<div class="body-inner">
+	
+	<header id="header" class="navbar-fixed-top header" role="banner">
+		<div class="container">
+			<div class="row">
+				
+				<div class="navbar-header">
+				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				    </button>
+				    <div class="navbar-brand navbar-bg">
+					    <a href="../">
+					    	<img class="img-responsive" src="{% static 'images/logo.png' %}" alt="logo">
+					    </a> 
+				    </div>                   
+				</div>
+				<nav class="collapse navbar-collapse clearfix" role="navigation">
+						<ul class="nav navbar-nav navbar-right">
+								
+							<li><a href="/">Home</a></li>
+							
+								<li><a href="/sobre">Sobre</a></li>
+						 
+								<li><a href="/contato">Contato</a></li>
+	
+								<li class="dropdown active"><a href="../preco">Preços</a></li>
+	
+								{% if user.is_authenticated %}
+                    			<li><a href="../logout">Logout</a></li>
+                    			{% else %}
+                    			<li><a href="../login">Login</a></li>
+                    			{% endif %}
+
+						</ul>
+					</nav>
+					
+			</div>
+		</div>
+	</header>
+
+	<div id="banner-area">
+		<img src="{% static 'images/banner/banner2.jpg' %}" alt ="" />
+		<div class="parallax-overlay"></div>
+			
+			<div class="banner-title-content">
+	        	<div class="text-center">
+		        	<h2>Planos</h2>
+		        	<ul class="breadcrumb">
+			            <li>Home</li>
+			            <li><a href="#">Planos</a></li>
+		          	</ul>
+	          	</div>
+          	</div>
+	</div>
+
+	<section id="main-container">
+		<div class="container">
+	  		<div class="row">
+				
+				<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
+				    <div class="plan text-center">
+							<span class="plan-name">Basico <small>Mensal</small></span>
+							<p class="plan-price"><sup class="currency">R$</sup><strong>49</strong><sub>.99</sub></p>
+							<ul class="list-unstyled">
+									<li>Acesso apenas um serviço</li>
+									<li>Cartão de desbloqueio incluso</li>
+									<li>Suporte 24hrs</li>
+							</ul>
+							<a class="btn btn-primary" href="#" >Assinar</a>
+						</div>
+				</div>
+
+				
+				<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1s">
+				    <div class="plan text-center">
+				        <span class="plan-name">Padrão<small>Trimestral</small></span>
+				        <p class="plan-price"><sup class="currency">R$</sup><strong>99</strong><sub>.99</sub></p>
+				        <ul class="list-unstyled">
+							<li>Acesso ao serviço de bike e pertences</li>
+							<li>Cartão de desbloqueio incluso</li>
+							<li>Até 3 cartões gratuitos em caso de perda ou extravio</li>
+							<li>Suporte 24hrs</li>
+							<li>Acesso por três meses</li>
+				        </ul>
+				        <a class="btn btn-primary" href="#">Assinar</a>
+				    </div>
+				</div>
+
+				
+				<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.4s">
+				    <div class="plan text-center featured">
+				        <span class="plan-name">Premium <small>Anual</small></span>
+				        <p class="plan-price"><sup class="currency">R$</sup><strong>149</strong><sub>.99</sub></p>
+				        <ul class="list-unstyled">
+								<li>Acesso ao serviço de bike e pertences</li>
+								<li>Cartão de desbloqueio incluso</li>
+								<li>Até 5 cartões gratuitos em caso de perda ou extravio</li>
+								<li>Suporte 24hrs</li>
+								<li>Acesso por um ano</li>
+				        </ul>
+				        <a class="btn btn-primary" href="#">Assinar</a>
+				    </div>
+				</div>
+
+		
+			</div>
+		</div>
+	</section>
+	
+	
+
+	{% endblock %}  

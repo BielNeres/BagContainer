@@ -1,0 +1,99 @@
+{% extends 'index.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="body-inner">
+	
+	<header id="header" class="navbar-fixed-top header" role="banner">
+		<div class="container">
+			<div class="row">
+				
+				<div class="navbar-header">
+				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				    </button>
+				    <div class="navbar-brand navbar-bg">
+					    <a href="../">
+					    	<img class="img-responsive" src="{% static 'images/logo.png' %}" alt="logo">
+					    </a> 
+				    </div>                   
+				</div>
+				<nav class="collapse navbar-collapse clearfix" role="navigation">
+						<ul class="nav navbar-nav navbar-right">
+							
+							<li class="dropdown active">
+                                <a href="/" class="dropdown-toggle" data-toggle="dropdown">Home <i class="fa fa-angle-down"></i></a>
+                            </li>
+							
+							<li><a href="/sobre">Sobre</a></li>
+                     
+                    		<li><a href="/contato">Contato</a></li>
+
+                    		<li><a href="../preco">Preços</a></li>
+
+							{% if user.is_authenticated %}
+							<li><a href="../logout">Logout</a></li>
+							{% else %}
+							<li><a href="../login">Login</a></li>
+							{% endif %}
+		
+		
+						</ul>
+					</nav>
+					
+			</div>
+		</div>
+	</header>
+
+<section id="home" class="no-padding">	
+    <div id="main-slide" class="cd-hero">
+        <ul class="cd-hero-slider">
+            <li class="selected">
+                <div class="overlay2">
+                    <img class="" src="{% static 'images/slider/bg1.jpg' %}" alt="slider">
+                </div>
+                <div class="cd-half-width">
+                    {% if user.is_authenticated %}
+                    <h2 class="titulo-principal"> {{user.username}} Deseja Guardar sua Bike com segurança??</h2>
+                    {% else %}
+                    <h2 class="titulo-principal"> O Que deseja guardar hoje?</h2>
+                    {% endif %}
+                    <a href="../preco" class="cd-btn btn btn-primary solid">Clique aqui</a>
+                </div> 
+
+            </li>
+            <li>
+                <div class="overlay2">
+                    <img class="" src="{% static 'images/slider/bg2.jpg' %}" alt="slider">
+                </div>
+
+                <div class="cd-half-width">
+                    <h2>Guarde seu pertence com segurança</h2>
+                    <a href="../preco" class="cd-btn btn btn-primary solid">Clique aqui</a>
+                </div> 
+
+                
+            </li>
+        </ul> 
+
+    <div class="cd-slider-nav">
+        <nav>
+            <span class="cd-marker item-1"></span>
+            <ul>
+                
+                <li><a href="#0"><i class="fa fa-bicycle"></i> Bicicletas</a></li>
+                <li><a href="#0"><i class="fa fa-desktop"></i> Pertences</a></li>
+                
+            </ul>
+        </nav> 
+    </div> 
+
+    </div> 	
+</section> 
+
+{% endblock %}  
